@@ -1,5 +1,6 @@
 package com.Ayush.TodoList.model;
 
+import com.Ayush.TodoList.common.Enums.Role;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;

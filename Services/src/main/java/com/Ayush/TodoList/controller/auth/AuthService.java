@@ -1,7 +1,7 @@
 package com.Ayush.TodoList.controller.auth;
 
 import com.Ayush.TodoList.config.JwtService;
-import com.Ayush.TodoList.model.Role;
+import com.Ayush.TodoList.common.Enums.Role;
 import com.Ayush.TodoList.model.User;
 import com.Ayush.TodoList.repository.UserRepository;
 import lombok.RequiredArgsConstructor;

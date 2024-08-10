@@ -1,4 +1,4 @@
-package com.Ayush.TodoList.model;
+package com.Ayush.TodoList.common.Enums;
 
 public enum Role {
     USER,

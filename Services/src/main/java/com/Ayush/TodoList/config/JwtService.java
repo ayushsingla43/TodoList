@@ -17,8 +17,6 @@ import java.util.function.Function;
 @Service
 public class JwtService {
 
-    private final String SECRET_KEY = "c6wnSldofu42QtFhIzaTuROQbtzCQTaq7uQmMyRrXWHc30BVnUtrdM2nwF6hjlr1Z0nxmZk8M9v6Lpbk4q7JQwH7GxsMeNQVFlNHKz2gfejbY2mtVJrsbwCTpKHL1CBAjQjwdTmoGY1RQkVQLBvyC7sMN18oLwvOQzH8LVUMcf5RzVwyT6p0KznIYHiDNCHg6elmRvEDRldF9TrwKrOVBMKVQiIyzZl3aRUjifwdOBLhQS1l4xL53jI8PZNDbgNZ";
-
     public String extractUserName(String jwtToken) {
         return extractClaim(jwtToken, Claims::getSubject);
     }
@@ -69,6 +67,7 @@ public class JwtService {
     }
 
     private Key getSignInKey() {
+        String SECRET_KEY = "c6wnSldofu42QtFhIzaTuROQbtzCQTaq7uQmMyRrXWHc30BVnUtrdM2nwF6hjlr1Z0nxmZk8M9v6Lpbk4q7JQwH7GxsMeNQVFlNHKz2gfejbY2mtVJrsbwCTpKHL1CBAjQjwdTmoGY1RQkVQLBvyC7sMN18oLwvOQzH8LVUMcf5RzVwyT6p0KznIYHiDNCHg6elmRvEDRldF9TrwKrOVBMKVQiIyzZl3aRUjifwdOBLhQS1l4xL53jI8PZNDbgNZ";
         byte[] keyBytes = Decoders.BASE64.decode(SECRET_KEY);
         return Keys.hmacShaKeyFor(keyBytes);
     }
