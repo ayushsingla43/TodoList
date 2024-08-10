@@ -24,7 +24,7 @@ public class ListItemPK implements Serializable {
     @Override
     public boolean equals(Object obj) {
         if(this == obj) return true;
-        if(!(obj instanceof ListItemPK listItemPK)) return false;
+        if(!(obj instanceof ListItemPK)) return false;
         return Objects.equals(userName, ((ListItemPK) obj).userName) &&
                 Objects.equals(itemId, ((ListItemPK) obj).itemId);
     }

@@ -4,7 +4,6 @@ import com.Ayush.TodoList.dto.UserDTO;
 import com.Ayush.TodoList.model.User;
 import com.Ayush.TodoList.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
